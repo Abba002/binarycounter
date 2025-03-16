@@ -128,6 +128,7 @@ set rc [catch {
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
   set_param synth.incrementalSynthesisCache C:/Users/ibuku/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8128-Ibukun/incrSyn
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint top_module_routed.dcp
   set_property webtalk.parent_dir C:/Abba/binarycounter/binarycounter.cache/wt [current_project]

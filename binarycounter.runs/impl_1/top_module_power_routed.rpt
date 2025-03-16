@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sun Mar 16 18:32:32 2025
+| Date             : Sun Mar 16 18:45:51 2025
 | Host             : Ibukun running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_power_routed.rpt -pb top_module_power_summary_routed.pb -rpx top_module_power_routed.rpx
 | Design           : top_module
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 7.995        |
+| Total On-Chip Power (W)  | 7.867        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 7.839        |
-| Device Static (W)        | 0.156        |
+| Dynamic (W)              | 7.713        |
+| Device Static (W)        | 0.154        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 63.5         |
-| Junction Temperature (C) | 61.5         |
+| Max Ambient (C)          | 64.1         |
+| Junction Temperature (C) | 60.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -55,10 +55,10 @@ Table of Contents
 | Slice Logic    |     0.023 |        9 |       --- |             --- |
 |   LUT as Logic |     0.023 |        4 |     63400 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.084 |       11 |       --- |             --- |
-| I/O            |     7.732 |       20 |       210 |            9.52 |
-| Static Power   |     0.156 |          |           |                 |
-| Total          |     7.995 |          |           |                 |
+| Signals        |     0.082 |       11 |       --- |             --- |
+| I/O            |     7.608 |       20 |       210 |            9.52 |
+| Static Power   |     0.154 |          |           |                 |
+| Total          |     7.867 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.186 |       0.123 |      0.063 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.307 |       0.283 |      0.024 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.188 |       2.184 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.183 |       0.121 |      0.061 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.302 |       0.278 |      0.024 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.153 |       2.149 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,8 +135,8 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| top_module |     7.839 |
-|   D1       |     0.090 |
+| top_module |     7.713 |
+|   D1       |     0.088 |
 +------------+-----------+
 
 
