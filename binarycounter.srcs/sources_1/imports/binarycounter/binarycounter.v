@@ -14,7 +14,7 @@ endmodule
 
 module hex7seg(
     input wire [3:0] x,
-    output reg [6:0], a_to_g
+    output reg [6:0] a_to_g
 );
 
 always @ (*) begin

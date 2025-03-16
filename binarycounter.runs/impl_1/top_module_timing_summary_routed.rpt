@@ -1,0 +1,548 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Mar 16 18:32:32 2025
+| Host         : Ibukun running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_module_timing_summary_routed.rpt -pb top_module_timing_summary_routed.pb -rpx top_module_timing_summary_routed.rpx -warn_on_violation
+| Design       : top_module
+| Device       : 7a100t-csg324
+| Speed File   : -3  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    7          inf        0.000                      0                    7           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             7 Endpoints
+Min Delay             7 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 sw[0]
+                            (input port)
+  Destination:            a_to_g[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.492ns  (logic 4.746ns (55.881%)  route 3.747ns (44.119%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    J15                                               0.000     0.000 r  sw[0] (IN)
+                         net (fo=0)                   0.000     0.000    sw[0]
+    J15                  IBUF (Prop_ibuf_I_O)         1.326     1.326 r  sw_IBUF[0]_inst/O
+                         net (fo=7, routed)           1.476     2.802    D1/sw_IBUF[0]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I2_O)        0.099     2.901 r  D1/a_to_g_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           2.271     5.171    a_to_g_OBUF[5]
+    R10                  OBUF (Prop_obuf_I_O)         3.321     8.492 r  a_to_g_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     8.492    a_to_g[5]
+    R10                                                               r  a_to_g[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[3]
+                            (input port)
+  Destination:            a_to_g[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.260ns  (logic 4.622ns (55.956%)  route 3.638ns (44.044%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R15                                               0.000     0.000 r  sw[3] (IN)
+                         net (fo=0)                   0.000     0.000    sw[3]
+    R15                  IBUF (Prop_ibuf_I_O)         1.325     1.325 r  sw_IBUF[3]_inst/O
+                         net (fo=7, routed)           1.461     2.786    D1/sw_IBUF[3]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I0_O)        0.097     2.883 r  D1/a_to_g_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           2.177     5.060    a_to_g_OBUF[6]
+    T10                  OBUF (Prop_obuf_I_O)         3.199     8.260 r  a_to_g_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     8.260    a_to_g[6]
+    T10                                                               r  a_to_g[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[1]
+                            (input port)
+  Destination:            a_to_g[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.025ns  (logic 4.747ns (59.160%)  route 3.277ns (40.840%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    L16                                               0.000     0.000 r  sw[1] (IN)
+                         net (fo=0)                   0.000     0.000    sw[1]
+    L16                  IBUF (Prop_ibuf_I_O)         1.328     1.328 r  sw_IBUF[1]_inst/O
+                         net (fo=7, routed)           1.318     2.645    D1/sw_IBUF[1]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I3_O)        0.097     2.742 r  D1/a_to_g_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.960     4.702    a_to_g_OBUF[3]
+    K13                  OBUF (Prop_obuf_I_O)         3.323     8.025 r  a_to_g_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     8.025    a_to_g[3]
+    K13                                                               r  a_to_g[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[1]
+                            (input port)
+  Destination:            a_to_g[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.888ns  (logic 4.608ns (58.413%)  route 3.281ns (41.587%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    L16                                               0.000     0.000 r  sw[1] (IN)
+                         net (fo=0)                   0.000     0.000    sw[1]
+    L16                  IBUF (Prop_ibuf_I_O)         1.328     1.328 r  sw_IBUF[1]_inst/O
+                         net (fo=7, routed)           1.311     2.639    D1/sw_IBUF[1]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I3_O)        0.097     2.736 r  D1/a_to_g_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.970     4.705    a_to_g_OBUF[1]
+    T11                  OBUF (Prop_obuf_I_O)         3.183     7.888 r  a_to_g_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.888    a_to_g[1]
+    T11                                                               r  a_to_g[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[0]
+                            (input port)
+  Destination:            a_to_g[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.539ns  (logic 4.538ns (60.197%)  route 3.001ns (39.803%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    J15                                               0.000     0.000 f  sw[0] (IN)
+                         net (fo=0)                   0.000     0.000    sw[0]
+    J15                  IBUF (Prop_ibuf_I_O)         1.326     1.326 f  sw_IBUF[0]_inst/O
+                         net (fo=7, routed)           1.476     2.802    D1/sw_IBUF[0]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.097     2.899 r  D1/a_to_g_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.525     4.423    a_to_g_OBUF[4]
+    K16                  OBUF (Prop_obuf_I_O)         3.115     7.539 r  a_to_g_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     7.539    a_to_g[4]
+    K16                                                               r  a_to_g[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[1]
+                            (input port)
+  Destination:            a_to_g[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.458ns  (logic 4.581ns (61.420%)  route 2.877ns (38.580%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    L16                                               0.000     0.000 f  sw[1] (IN)
+                         net (fo=0)                   0.000     0.000    sw[1]
+    L16                  IBUF (Prop_ibuf_I_O)         1.328     1.328 f  sw_IBUF[1]_inst/O
+                         net (fo=7, routed)           1.318     2.645    D1/sw_IBUF[1]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.097     2.742 r  D1/a_to_g_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.560     4.302    a_to_g_OBUF[2]
+    P15                  OBUF (Prop_obuf_I_O)         3.156     7.458 r  a_to_g_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.458    a_to_g[2]
+    P15                                                               r  a_to_g[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[1]
+                            (input port)
+  Destination:            a_to_g[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.268ns  (logic 4.726ns (65.034%)  route 2.541ns (34.966%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    L16                                               0.000     0.000 r  sw[1] (IN)
+                         net (fo=0)                   0.000     0.000    sw[1]
+    L16                  IBUF (Prop_ibuf_I_O)         1.328     1.328 r  sw_IBUF[1]_inst/O
+                         net (fo=7, routed)           1.311     2.639    D1/sw_IBUF[1]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I3_O)        0.097     2.736 r  D1/a_to_g_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.230     3.966    a_to_g_OBUF[0]
+    L18                  OBUF (Prop_obuf_I_O)         3.302     7.268 r  a_to_g_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     7.268    a_to_g[0]
+    L18                                                               r  a_to_g[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.298ns  (logic 1.601ns (69.678%)  route 0.697ns (30.322%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.349     0.601    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I2_O)        0.048     0.649 r  D1/a_to_g_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           0.348     0.998    a_to_g_OBUF[0]
+    L18                  OBUF (Prop_obuf_I_O)         1.300     2.298 r  a_to_g_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.298    a_to_g[0]
+    L18                                                               r  a_to_g[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.416ns  (logic 1.532ns (63.411%)  route 0.884ns (36.589%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.355     0.608    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I2_O)        0.045     0.653 r  D1/a_to_g_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           0.530     1.182    a_to_g_OBUF[2]
+    P15                  OBUF (Prop_obuf_I_O)         1.234     2.416 r  a_to_g_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     2.416    a_to_g[2]
+    P15                                                               r  a_to_g[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.475ns  (logic 1.492ns (60.291%)  route 0.983ns (39.709%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.485     0.738    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I3_O)        0.045     0.783 r  D1/a_to_g_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           0.498     1.281    a_to_g_OBUF[4]
+    K16                  OBUF (Prop_obuf_I_O)         1.194     2.475 r  a_to_g_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     2.475    a_to_g[4]
+    K16                                                               r  a_to_g[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.646ns  (logic 1.559ns (58.920%)  route 1.087ns (41.080%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.349     0.601    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.045     0.646 r  D1/a_to_g_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           0.739     1.385    a_to_g_OBUF[1]
+    T11                  OBUF (Prop_obuf_I_O)         1.261     2.646 r  a_to_g_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.646    a_to_g[1]
+    T11                                                               r  a_to_g[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.709ns  (logic 1.620ns (59.796%)  route 1.089ns (40.204%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.355     0.608    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.049     0.657 r  D1/a_to_g_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           0.735     1.391    a_to_g_OBUF[3]
+    K13                  OBUF (Prop_obuf_I_O)         1.318     2.709 r  a_to_g_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     2.709    a_to_g[3]
+    K13                                                               r  a_to_g[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.916ns  (logic 1.575ns (54.023%)  route 1.341ns (45.977%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.481     0.734    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.045     0.779 r  D1/a_to_g_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           0.860     1.639    a_to_g_OBUF[6]
+    T10                  OBUF (Prop_obuf_I_O)         1.277     2.916 r  a_to_g_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     2.916    a_to_g[6]
+    T10                                                               r  a_to_g[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw[2]
+                            (input port)
+  Destination:            a_to_g[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.014ns  (logic 1.618ns (53.687%)  route 1.396ns (46.313%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M13                                               0.000     0.000 r  sw[2] (IN)
+                         net (fo=0)                   0.000     0.000    sw[2]
+    M13                  IBUF (Prop_ibuf_I_O)         0.253     0.253 r  sw_IBUF[2]_inst/O
+                         net (fo=7, routed)           0.485     0.738    D1/sw_IBUF[2]
+    SLICE_X0Y87          LUT4 (Prop_lut4_I1_O)        0.044     0.782 r  D1/a_to_g_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           0.911     1.693    a_to_g_OBUF[5]
+    R10                  OBUF (Prop_obuf_I_O)         1.321     3.014 r  a_to_g_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     3.014    a_to_g[5]
+    R10                                                               r  a_to_g[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
